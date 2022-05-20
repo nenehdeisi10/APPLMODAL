@@ -1,0 +1,2 @@
+# APPLMODAL
+if WinExists("XML is Valid") then     ;MsgBox($MB_APPLMODAL,"XML is Valid","Your Ribbon Code is Valid",5)     send("{ENTER}")     send("^s")     send("^w")     winclose("Office RibbonX Editor")     run("C:\Program Files (x86)\Microsoft Office\root\Office16\excel.exe C:\Users\purchasing\Documents\Excel\RibbonTester.xlsm") Else     MsgBox($MB_APPLMODAL,"Error","There are error(s) with the xml code",10)     winclose("Office RibbonX Editor") EndIf
